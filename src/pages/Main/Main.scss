@@ -1,3 +1,9 @@
+.container {
+  width: 50%;
+  min-width: 800px;
+  margin: auto;
+}
+
 .cell {
   display: inline-block;
   width: 9em;
@@ -5,6 +11,9 @@
   text-align: right;
 }
 
+.narrow {
+  width: 5em;
+}
 .left-align {
   text-align: left;
 }
@@ -26,4 +35,8 @@
 }
 
 .row {
+}
+
+.chart {
+  padding-top: 1em;
 }
