@@ -1,42 +1,85 @@
-.container {
-  width: 50%;
-  min-width: 800px;
+.wrapper {
+  position:relative;
+  width: 30em;
+  overflow:hidden;
   margin: auto;
+  background-color: #010101;
 }
 
-.cell {
-  display: inline-block;
-  width: 9em;
-  padding: 0.5em;
-  text-align: right;
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 60em;
+  }
 }
 
-.narrow {
-  width: 5em;
-}
-.left-align {
-  text-align: left;
-}
-
-.bold {
-  font-weight: 800;
+@keyframes stars-to-left {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(-50%);
+	}
 }
 
-.title {
-  font-size: 2em;
+.stars {
+  width: 1200%;
+  background-image: url("../../assets/images/star_field.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  animation-name: stars-to-left;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.container {
+  position: relative;
 }
 
 .progress {
-  padding-top: 1em;
+  display: grid;
+  grid-template-areas:
+    '. ..... .'
+    '. donut .'
+    '. ..... .'
+    '. info  .'
+    '. ..... .';
+
+  grid-template-rows:    1em 2fr 1em 2fr 1em;
+  grid-template-columns: 1em 2fr 1em;
 }
 
-.heading {
-  font-weight: 800;
+@media (min-width: 1024px) {
+  .progress {
+    grid-template-areas:
+      '. ..... . .... .'
+      '. donut . info .'
+      '. ..... . .... .';
+
+    grid-template-rows:    1em 2fr 1em;
+    grid-template-columns: 1em 2fr 1em 2fr 1em;
+  }
 }
 
-.row {
+#donut {
+  grid-area: donut;
 }
 
-.chart {
-  padding-top: 1em;
+#info {
+  grid-area: info;
+}
+
+.footer {
+  padding-top: 0.5em;
+  text-align: center;
+  font-size: 0.75em;
+  font-family: Helvetica, sans-serif;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
 }

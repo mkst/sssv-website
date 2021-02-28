@@ -1,0 +1,18 @@
+body {
+	background-color: #030306;
+	overflow: hidden;
+}
+
+.App {
+	padding-top: 0.25em;
+}
+
+@media (min-width: 1024px) {
+	.App {
+		padding-top: 5em;
+	}
+}
+
+.flex {
+	display: flex;
+}
