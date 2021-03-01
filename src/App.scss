@@ -16,3 +16,21 @@ body {
 .flex {
 	display: flex;
 }
+
+@font-face {
+  font-family: 'Comic Sans';
+  src: url("assets/fonts/design.graffiti.comicsansms.ttf");
+}
+
+@font-face {
+  font-family: 'Comic Sans Bold';
+  src: url("assets/fonts/design.graffiti.comicsansmsgras.ttf");
+}
+
+.comic-sans {
+	font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+}
+
+.comic-sans-bold {
+	font-family: 'Comic Sans MS', 'Comic Sans Bold', sans-serif;
+}

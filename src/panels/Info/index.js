@@ -73,8 +73,8 @@ export const InfoPanel = ({
   }
 
   return (
-    <div id='info' className='info-panel'>
-      <div className='info-panel-heading'>
+    <div id='info' className='info-panel comic-sans'>
+      <div className='info-panel-heading comic-sans-bold'>
         {selected === null ? 'Overview' : capitalise(selected)}
       </div>
       <div className='info-panel-description'>

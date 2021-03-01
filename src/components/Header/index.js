@@ -10,7 +10,7 @@ export const Header = ({
   		<div className='flex'>
   			<div className='bar-left'>
   				<div className='inner'>
-            <div className='text'>
+            <div className='text comic-sans-bold'>
               SPACE STATION SILICON VALLEY
             </div>
   				</div>
@@ -22,7 +22,7 @@ export const Header = ({
   		</div>
   		<div className='bottom'>
   			<div className='inner'>
-  				<div className='text'>
+  				<div className='text comic-sans-bold'>
   					DECOMPILATION PROJECT
   				</div>
   				<div className='flex marker-accent-container'>
