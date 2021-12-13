@@ -39,7 +39,7 @@ export const MainPage = () => {
       </div>
     </div>
     <div className='footer'>
-      <a href='https://www.github.com/mkst/sssv/' target='_blank'>GitHub</a>
+      <a href='https://github.com/mkst/sssv/' target='_blank'>GitHub</a>
     </div>
     </div>
   )
