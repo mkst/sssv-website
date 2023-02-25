@@ -1,24 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0dabd83a.chunk.css",
-    "main.js": "/static/js/main.dbda17f1.chunk.js",
-    "main.js.map": "/static/js/main.dbda17f1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.54659951.js",
-    "runtime-main.js.map": "/static/js/runtime-main.54659951.js.map",
-    "static/js/2.e6198d4a.chunk.js": "/static/js/2.e6198d4a.chunk.js",
-    "static/js/2.e6198d4a.chunk.js.map": "/static/js/2.e6198d4a.chunk.js.map",
-    "static/js/3.6b81ec8f.chunk.js": "/static/js/3.6b81ec8f.chunk.js",
-    "static/js/3.6b81ec8f.chunk.js.map": "/static/js/3.6b81ec8f.chunk.js.map",
+    "main.css": "/static/css/main.3983e402.css",
+    "main.js": "/static/js/main.89484628.js",
+    "static/media/design.graffiti.comicsansms.ttf": "/static/media/design.graffiti.comicsansms.07795f4fba63091b0ab1.ttf",
+    "static/media/design.graffiti.comicsansmsgras.ttf": "/static/media/design.graffiti.comicsansmsgras.92557e6ed016730cc765.ttf",
+    "static/media/star_field.png": "/static/media/star_field.3f5160fc80421e0a184d.png",
     "index.html": "/index.html",
-    "static/css/main.0dabd83a.chunk.css.map": "/static/css/main.0dabd83a.chunk.css.map",
-    "static/js/2.e6198d4a.chunk.js.LICENSE.txt": "/static/js/2.e6198d4a.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/design.graffiti.comicsansmsgras.92557e6e.ttf",
-    "static/media/Main.scss": "/static/media/star_field.3f5160fc.png"
+    "main.3983e402.css.map": "/static/css/main.3983e402.css.map",
+    "main.89484628.js.map": "/static/js/main.89484628.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.54659951.js",
-    "static/js/2.e6198d4a.chunk.js",
-    "static/css/main.0dabd83a.chunk.css",
-    "static/js/main.dbda17f1.chunk.js"
+    "static/css/main.3983e402.css",
+    "static/js/main.89484628.js"
   ]
 }
