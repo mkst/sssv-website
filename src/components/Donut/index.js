@@ -1,6 +1,6 @@
-import React, {useRef, useEffect, useState} from 'react'
+import React, {useRef, useEffect, useState} from "react"
 
-import './Donut.scss'
+import "./Donut.scss"
 
 export const Donut = ({
   dataHook,
@@ -19,37 +19,37 @@ export const Donut = ({
       return
     }
 
-    const filtered = data.progress.filter(x => x.version == 'us')
+    const filtered = data.progress.filter(x => x.version == "us")
     if (filtered === null || filtered.length === 0) {
-      console.log('did not find requested version in data')
+      console.log("did not find requested version in data")
       return
     }
     const sections = filtered[0].sections
 
     if (sections.length !== 5) {
-      console.log('expected 5 sections')
+      console.log("expected 5 sections")
       return
     }
 
     const proportions = {
-      'main': 0.2,
-      'lib': 0.2,
-      'overlay1': 0.15,
-      'overlay2' : 0.45
+      "main": 0.2,
+      "lib": 0.2,
+      "overlay1": 0.15,
+      "overlay2" : 0.45
     }
 
     const rotation_offset = Math.PI
 
     const colors = [
       // [filled, empty]
-      ['rgb(171,38,114)', 'rgb(61,11,42)'], // main
-      ['rgb(1,126,180)', 'rgb(3,54,74)'],   // lib
-      ['rgb(0,167,0)', 'rgb(0,86,0)'],      // overlay1
-      ['rgb(255,255,0)', 'rgb(67,67,0)']    // overlay2
+      ["rgb(171,38,114)", "rgb(61,11,42)"], // main
+      ["rgb(1,126,180)", "rgb(3,54,74)"],   // lib
+      ["rgb(0,167,0)", "rgb(0,86,0)"],      // overlay1
+      ["rgb(255,255,0)", "rgb(67,67,0)"]    // overlay2
     ]
 
     const canvas = canvasRef.current
-    const context = canvas.getContext('2d')
+    const context = canvas.getContext("2d")
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -59,13 +59,13 @@ export const Donut = ({
     const thickness = 60
 
     context.lineWidth = thickness;
-    context.strokeStyle = 'rgba(0, 0, 0, 0)';
+    context.strokeStyle = "rgba(0, 0, 0, 0)";
 
     var angle = rotation_offset
     for (var i = 0; i < sections.length; i++) {
         const section = sections[i]
-        if (section.section === 'all') {
-          // skip 'all' section
+        if (section.section === "all") {
+          // skip "all" section
           continue
         }
         const name = section.section
@@ -124,34 +124,34 @@ export const Donut = ({
       const rotation = (2*Math.PI) + (angle - rotation_offset)
       if (rotation < 0.2 * (2*Math.PI)) {
         // main
-        if (selected !== 'main') {
-          setSelected('main')
+        if (selected !== "main") {
+          setSelected("main")
         }
       } else if (rotation < 0.4 * (2*Math.PI)) {
-        if (selected !== 'lib') {
-          setSelected('lib')
+        if (selected !== "lib") {
+          setSelected("lib")
         }
       } else if (rotation < 0.55 * (2*Math.PI)) {
-        if (selected !== 'overlay1') {
-          setSelected('overlay1')
+        if (selected !== "overlay1") {
+          setSelected("overlay1")
         }
       } else {
-        if (selected !== 'overlay2') {
-          setSelected('overlay2')
+        if (selected !== "overlay2") {
+          setSelected("overlay2")
         }
       }
     }
 
-    canvas.addEventListener('mousemove', eventListener)
+    canvas.addEventListener("mousemove", eventListener)
 
-    return () => canvas.removeEventListener('mousemove', eventListener);
+    return () => canvas.removeEventListener("mousemove", eventListener);
 
   }, [data, selected])
 
 
   return (
-    <div id='donut' className='doughnut'>
-      <canvas ref={canvasRef} width='440' height='440'/>
+    <div id="donut" className="doughnut">
+      <canvas ref={canvasRef} width="440" height="440"/>
     </div>
   )
 }

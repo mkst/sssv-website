@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from "react"
 
-import './Info.scss'
+import "./Info.scss"
 
 export const InfoPanel = ({
   dataHook,
@@ -18,18 +18,18 @@ export const InfoPanel = ({
       return
     }
 
-    const desired_section = selected === null ? 'all' : selected
+    const desired_section = selected === null ? "all" : selected
 
-    const filtered = data.progress.filter(x => x.version == 'us')
+    const filtered = data.progress.filter(x => x.version == "us")
     if (filtered === null || filtered.length === 0) {
-      console.log('Did not find requested version in data')
+      console.log("Did not find requested version in data")
       return
     }
     const sections = filtered[0].sections
 
     const section = sections.filter(x => x.section === desired_section)
     if (section === null || section.length === 0) {
-      console.log('Could not find section', desired_section)
+      console.log("Could not find section", desired_section)
       return
     }
 
@@ -42,10 +42,10 @@ export const InfoPanel = ({
     const code_percentage = code / total_code * 100
 
     setInfo(<div>
-        <div className='info-panel-entry'>
+        <div className="info-panel-entry">
           Functions: {funcs} / {total_funcs} ({funcs_percentage.toFixed(2)}%)
         </div>
-        <div className='info-panel-entry'>
+        <div className="info-panel-entry">
           Bytes: {code} / {total_code}  ({code_percentage.toFixed(2)}%)
         </div>
       </div>)
@@ -53,17 +53,17 @@ export const InfoPanel = ({
   }, [data, selected])
 
   useEffect(() => {
-    var desc = ''
-    if (selected === 'main') {
-      desc = 'Initialisation logic'
-    } else if (selected === 'lib') {
-      desc = 'Library code inc libultra'
-    } else if (selected === 'overlay1') {
-      desc = 'Introduction code'
-    } else if (selected === 'overlay2') {
-      desc = 'Core game logic'
+    var desc = ""
+    if (selected === "main") {
+      desc = "Initialisation logic"
+    } else if (selected === "lib") {
+      desc = "Library code inc libultra"
+    } else if (selected === "overlay1") {
+      desc = "Introduction code"
+    } else if (selected === "overlay2") {
+      desc = "Core game logic"
     } else {
-      desc = 'Total decomp progress'
+      desc = "Total decomp progress"
     }
     setDescription(desc)
   }, [selected])
@@ -73,14 +73,14 @@ export const InfoPanel = ({
   }
 
   return (
-    <div id='info' className='info-panel comic-sans'>
-      <div className='info-panel-heading comic-sans-bold'>
-        {selected === null ? 'Overview' : capitalise(selected)}
+    <div id="info" className="info-panel comic-sans">
+      <div className="info-panel-heading comic-sans-bold">
+        {selected === null ? "Overview" : capitalise(selected)}
       </div>
-      <div className='info-panel-description'>
+      <div className="info-panel-description">
         {description}
       </div>
-      <div className='info-panel-data'>
+      <div className="info-panel-data">
         {info}
       </div>
     </div>

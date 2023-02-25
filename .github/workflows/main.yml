@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout this repo
       uses: actions/checkout@v3
