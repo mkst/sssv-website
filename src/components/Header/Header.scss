@@ -1,172 +1,258 @@
 .header {
-	color: yellow;
-	text-transform: uppercase;
-	font-weight: bold;
+  color: yellow;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .header .bar-left {
-	flex: 90%;
+  flex: 90%;
 }
 
 .header .bar-left .inner {
-	border: 0.25em solid rgb(5,13,182);
-	padding-left: 0.5em;
-	padding-bottom: 0.25em;
+  border: 0.25em solid rgb(5, 13, 182);
+  padding-left: 0.5em;
+  padding-bottom: 0.25em;
 }
 
 .header .bar-left .inner .text {
-	font-size: 2.5em;
-	font-weight: bold;
-	text-shadow: 0.05em 0.05em #666600;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 0.05em 0.05em #666600;
 }
 
 .header .bar-right {
-	flex: 10%;
-	padding-left: 0.5em;
+  flex: 10%;
+  padding-left: 0.5em;
 }
 
 .header .bar-right .inner {
-	border: 0.25em solid rgb(0,86,0);
-	border-bottom-width: 0px;
-	padding: 2%;
+  border: 0.25em solid rgb(0, 86, 0);
+  border-bottom-width: 0px;
+  padding: 2%;
 }
 
 .header .bottom .inner {
-	padding: 0.5em;
-	padding-left: 0.75em;
-	border: 0.25em solid rgb(0,86,0);
-	margin-top: -0.25em;
+  padding: 0.5em;
+  padding-left: 0.75em;
+  border: 0.25em solid rgb(0, 86, 0);
+  margin-top: -0.25em;
 }
 
 .header .bottom .inner .text {
-	font-size: 1.5em;
-	font-weight: bold;
-	padding-bottom: 10px;
-	text-shadow: 0.05em 0.05em #666600;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-shadow: 0.05em 0.05em #666600;
 }
 
 .header .bottom .marker-accent-container {
-	margin-bottom: -0.75em;
-	margin-left: -1em;
+  margin-bottom: -0.75em;
+  margin-left: -1em;
 }
 
 .header .bottom .marker-accent-container .marker-accent {
-	border-right: 4px solid rgb(0,86,0);
-	border-bottom: 4px solid rgb(0,86,0);
-	flex: 3%;
-	height: 7px;
+  border-right: 4px solid rgb(0, 86, 0);
+  border-bottom: 4px solid rgb(0, 86, 0);
+  flex: 3%;
+  height: 7px;
 }
 
 .header .bottom .marker-accent-container .marker-accent.green {
-	border-color: rgb(0,86,0);
+  border-color: rgb(0, 86, 0);
 }
 
 .header .bottom .marker-accent-container .marker-accent.yellow {
-	border-color: rgb(175,143,0);
+  border-color: rgb(175, 143, 0);
 }
 
 .header .bottom .marker-accent-container .marker-accent.orange {
-	border-color: rgb(181,78,0);
+  border-color: rgb(181, 78, 0);
 }
 
 .header .bottom .marker-accent-container .marker-accent.red {
-	border-color: rgb(180,15,0);
+  border-color: rgb(180, 15, 0);
 }
 
 .header .bottom .marker-accent-container .marker-accent.magenta {
-	border-color: rgb(181,7,79);
+  border-color: rgb(181, 7, 79);
 }
 
 .header .bottom .marker-accent-container .marker-accent.purple {
-	border-color: rgb(92,7,181);
+  border-color: rgb(92, 7, 181);
 }
 
 .header .bottom .marker-accent-container .marker-accent.blue {
-	border-color: rgb(5,13,182);
+  border-color: rgb(5, 13, 182);
 }
 
 .header .bottom .marker-accent-container .marker-accent.cyan {
-	border-color: rgb(0,183,180);
+  border-color: rgb(0, 183, 180);
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=green-yellow] {
-	border-image-source: linear-gradient(to right, rgb(0,86,0), rgb(175,143,0));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='green-yellow'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(0, 86, 0),
+    rgb(175, 143, 0)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=yellow-green] {
-	border-image-source: linear-gradient(to right, rgb(175,143,0), rgb(0,86,0));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='yellow-green'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(175, 143, 0),
+    rgb(0, 86, 0)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=yellow-orange] {
-	border-image-source: linear-gradient(to right, rgb(175,143,0), rgb(181,78,0));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='yellow-orange'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(175, 143, 0),
+    rgb(181, 78, 0)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=orange-yellow] {
-	border-image-source: linear-gradient(to right, rgb(181,78,0), rgb(175,143,0));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='orange-yellow'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(181, 78, 0),
+    rgb(175, 143, 0)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=orange-red] {
-	border-image-source: linear-gradient(to right, rgb(181,78,0), rgb(180,15,0));
-	border-image-slice: 1;
+.header .bottom .marker-accent-container .marker-accent[gradient='orange-red'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(181, 78, 0),
+    rgb(180, 15, 0)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=red-orange] {
-	border-image-source: linear-gradient(to right, rgb(180,15,0), rgb(181,78,0));
-	border-image-slice: 1;
+.header .bottom .marker-accent-container .marker-accent[gradient='red-orange'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(180, 15, 0),
+    rgb(181, 78, 0)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=red-magenta] {
-	border-image-source: linear-gradient(to right, rgb(180,15,0), rgb(181,7,79));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='red-magenta'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(180, 15, 0),
+    rgb(181, 7, 79)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=magenta-red] {
-	border-image-source: linear-gradient(to right, rgb(181,7,79), rgb(180,15,0));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='magenta-red'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(181, 7, 79),
+    rgb(180, 15, 0)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=magenta-purple] {
-	border-image-source: linear-gradient(to right, rgb(181,7,79), rgb(92,7,181));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='magenta-purple'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(181, 7, 79),
+    rgb(92, 7, 181)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=purple-magenta] {
-	border-image-source: linear-gradient(to right, rgb(92,7,181), rgb(181,7,79));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='purple-magenta'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(92, 7, 181),
+    rgb(181, 7, 79)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=purple-blue] {
-	border-image-source: linear-gradient(to right, rgb(92,7,181), rgb(5,13,182));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='purple-blue'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(92, 7, 181),
+    rgb(5, 13, 182)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=blue-purple] {
-	border-image-source: linear-gradient(to right, rgb(5,13,182), rgb(92,7,181));
-	border-image-slice: 1;
+.header
+  .bottom
+  .marker-accent-container
+  .marker-accent[gradient='blue-purple'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(5, 13, 182),
+    rgb(92, 7, 181)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=blue-cyan] {
-	border-image-source: linear-gradient(to right, rgb(5,13,182), rgb(0,183,180));
-	border-image-slice: 1;
+.header .bottom .marker-accent-container .marker-accent[gradient='blue-cyan'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(5, 13, 182),
+    rgb(0, 183, 180)
+  );
+  border-image-slice: 1;
 }
 
-.header .bottom .marker-accent-container .marker-accent[gradient=cyan-blue] {
-	border-image-source: linear-gradient(to right, rgb(0,183,180), rgb(5,13,182));
-	border-image-slice: 1;
+.header .bottom .marker-accent-container .marker-accent[gradient='cyan-blue'] {
+  border-image-source: linear-gradient(
+    to right,
+    rgb(0, 183, 180),
+    rgb(5, 13, 182)
+  );
+  border-image-slice: 1;
 }
 
 .header .bottom .marker-accent-container .marker-end {
-	flex: 10%;
-	max-height: 11px;
+  flex: 10%;
+  max-height: 11px;
 }
 
 .header .bottom .marker-accent-container .marker-end .glyph {
-	text-align:right;
-	color: rgb(0,86,0);
-	font-weight: bold;
-	transform: translateY(-11px);
+  text-align: right;
+  color: rgb(0, 86, 0);
+  font-weight: bold;
+  transform: translateY(-11px);
 }

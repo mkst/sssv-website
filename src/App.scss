@@ -1,36 +1,36 @@
 body {
-	background-color: #030306;
-	overflow: hidden;
+  background-color: #030306;
+  overflow: hidden;
 }
 
 .App {
-	padding-top: 0.25em;
+  padding-top: 0.25em;
 }
 
 @media (min-width: 1024px) {
-	.App {
-		padding-top: 5em;
-	}
+  .App {
+    padding-top: 5em;
+  }
 }
 
 .flex {
-	display: flex;
+  display: flex;
 }
 
 @font-face {
   font-family: 'Comic Sans';
-  src: url("assets/fonts/design.graffiti.comicsansms.ttf");
+  src: url('assets/fonts/design.graffiti.comicsansms.ttf');
 }
 
 @font-face {
   font-family: 'Comic Sans Bold';
-  src: url("assets/fonts/design.graffiti.comicsansmsgras.ttf");
+  src: url('assets/fonts/design.graffiti.comicsansmsgras.ttf');
 }
 
 .comic-sans {
-	font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
 }
 
 .comic-sans-bold {
-	font-family: 'Comic Sans MS', 'Comic Sans Bold', sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans Bold', sans-serif;
 }

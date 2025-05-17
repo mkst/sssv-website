@@ -1,14 +1,13 @@
-import {MainPage} from "./pages/Main"
+import { MainPage } from './pages/Main'
 
-import "./App.scss"
+import './App.scss'
 
 function App() {
-
   return (
     <div className="App">
       <MainPage />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
